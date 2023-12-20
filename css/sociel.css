@@ -1,0 +1,127 @@
+:root{
+--Very-Dark-Magenta: hsl(300, 43%, 22%);
+--Soft-Pink: hsl(333, 80%, 67%);
+--Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+--Light-Grayish-Magenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+}
+*{
+    font-family: 'League Spartan', sans-serif;
+    margin:0;
+    padding:0;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--Light-Grayish-Magenta);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/images/bg-pattern-top-desktop.svg"), url("/images/bg-pattern-bottom-desktop.svg") ;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 0vw top 0vh, right 0vw bottom 0vh ;
+}
+main {
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.rates{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: flex-start;
+    gap: 20px;
+    height: 50%;
+}
+.rates .right{
+    width: 50%;
+}
+.rates .title{
+    color: var(--Very-Dark-Magenta);
+    font-size: 70px;
+}
+.rates .sub-title{
+    font-size: 19px;
+    margin-top: 16px;
+    color: gray;
+}
+.rates .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+.one, .two, .tree{
+    background-color: hsl(333, 80%, 95%);
+    border-radius: 5px;
+    width: 350px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+    color: var(--Very-Dark-Magenta);
+    font-weight: bold;
+}
+.two{
+    margin-left: 2rem;
+}
+.tree{
+    margin-left: 4rem;
+}
+.comments {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.profil-one, .profil-two, .profil-tree {
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 5px;
+    padding: 1.5rem;
+    color: white;
+    height: 160px;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    margin-bottom: 1rem;
+    
+}
+.profile .avatar{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+h1{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    
+}
+b{
+    color: var(--Soft-Pink);
+    font-size: 19px;
+    font-weight: lighter;
+    
+}
+.profil-two{
+    margin-top: 1rem;
+}
+.profil-tree{
+    margin-top: 2rem;
+}
+.comment{
+    margin-top: 2rem;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 20px;
+    
+}
